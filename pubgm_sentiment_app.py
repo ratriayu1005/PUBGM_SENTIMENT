@@ -48,15 +48,15 @@ if (selected == 'Sentiment Analysis') :
     ('Random Forest', 'Logistic Regression', 'SVM', 'Naive Bayes'))
 
     #load model
-    vector = pickle.load(open('https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/f446683b8f191caa6f914325fbea448c2cda1d36/random_model.sav', 'rb'))
+    vector = pickle.load(open('count_vectorizer.sav', 'rb'))
     if option_model == 'Random Forest' :
-        model = pickle.load(open(r'E:\Kuliah\TA\TA SENTIMENT ANALYSIS\coding\random_model.sav', 'rb'))
+        model = pickle.load(open(r'random_model.sav', 'rb'))
     if option_model == 'Logistic Regression' :
-        model = pickle.load(open(r'https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/lr_model.sav', 'rb'))
+        model = pickle.load(open(r'lr_model.sav', 'rb'))
     if option_model == 'SVM' :
-        model = pickle.load(open(r'https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/random_model.sav', 'rb'))
+        model = pickle.load(open(r'svm_model.sav', 'rb'))
     if option_model == 'Naive Bayes' :
-        model = pickle.load(open(r'https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/nb_model.sav', 'rb'))
+        model = pickle.load(open(r'nb_model.sav', 'rb'))
 
     #transform inputan
     kalimat = [kalimat]
@@ -79,8 +79,8 @@ if (selected == 'About The Data') :
     st.title('About The Data')
     
     #mengambil dataset
-    url = 'https://raw.githubusercontent.com/ratriayu1005/PUBGM_SENTIMENT/main/PUBGM_REVIEW1.csv'
-    df = pd.read_csv(url)
+    #url = 'https://raw.githubusercontent.com/ratriayu1005/PUBGM_SENTIMENT/main/PUBGM_REVIEW1.csv'
+    df = pd.read_csv('PUBGM_REVIEW1.csv')
     
     #data review
     st.write('PUBG Mobile app review data from App Store')
