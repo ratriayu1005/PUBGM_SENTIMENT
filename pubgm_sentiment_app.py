@@ -48,15 +48,15 @@ if (selected == 'Sentiment Analysis') :
     ('Random Forest', 'Logistic Regression', 'SVM', 'Naive Bayes'))
 
     #load model
-    vector = pickle.load(open('E:\Kuliah\TA\TA SENTIMENT ANALYSIS\coding\count_vectorizer.sav', 'rb'))
+    vector = pickle.load(open('https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/count_vectorizer.sav', 'rb'))
     if option_model == 'Random Forest' :
         model = pickle.load(open(r'E:\Kuliah\TA\TA SENTIMENT ANALYSIS\coding\random_model.sav', 'rb'))
     if option_model == 'Logistic Regression' :
-        model = pickle.load(open(r'E:\Kuliah\TA\TA SENTIMENT ANALYSIS\coding\lr_model.sav', 'rb'))
+        model = pickle.load(open(r'https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/lr_model.sav', 'rb'))
     if option_model == 'SVM' :
-        model = pickle.load(open(r'E:\Kuliah\TA\TA SENTIMENT ANALYSIS\coding\svm_model.sav', 'rb'))
+        model = pickle.load(open(r'https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/random_model.sav', 'rb'))
     if option_model == 'Naive Bayes' :
-        model = pickle.load(open(r'E:\Kuliah\TA\TA SENTIMENT ANALYSIS\coding\nb_model.sav', 'rb'))
+        model = pickle.load(open(r'https://github.com/ratriayu1005/PUBGM_SENTIMENT/blob/main/nb_model.sav', 'rb'))
 
     #transform inputan
     kalimat = [kalimat]
