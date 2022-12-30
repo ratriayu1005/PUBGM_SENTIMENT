@@ -75,8 +75,8 @@ if (selected == 'Sentiment Analysis') :
         else :
             st.write("Please input your review")
 
-if (selected == 'About The Data') :
-    st.title('About The Data')
+if (selected == 'The Data') :
+    st.title('Data')
     
     #mengambil dataset
     #url = 'https://raw.githubusercontent.com/ratriayu1005/PUBGM_SENTIMENT/main/PUBGM_REVIEW1.csv'
