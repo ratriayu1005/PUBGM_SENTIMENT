@@ -19,7 +19,8 @@ if (selected == 'Sentiment Analysis') :
     st.write('This is a sentiment analysis app for PUBG Mobile Reviews on App Store')
 
     # read csv from a URL
-    df = pd.read_csv('E:\Kuliah\TA\TA SENTIMENT ANALYSIS\PUBGM_REVIEW1.csv')
+    url = 'https://raw.githubusercontent.com/ratriayu1005/PUBGM_SENTIMENT/main/PUBGM_REVIEW1.csv'
+    df = pd.read_csv(url)
 
     #contoh review
     df = df[df['rating'] != 3]
@@ -78,7 +79,9 @@ if (selected == 'About The Data') :
     st.title('About The Data')
     
     #mengambil dataset
-    df = pd.read_csv('E:\Kuliah\TA\TA SENTIMENT ANALYSIS\PUBGM_REVIEW1.csv')
+    url = 'https://raw.githubusercontent.com/ratriayu1005/PUBGM_SENTIMENT/main/PUBGM_REVIEW1.csv'
+    df = pd.read_csv(url)
+    
     #data review
     st.write('PUBG Mobile app review data from App Store')
     st.write(df)
