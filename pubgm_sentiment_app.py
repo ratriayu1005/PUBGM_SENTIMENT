@@ -10,7 +10,7 @@ from PIL import Image
 with st.sidebar :
     selected = option_menu('MENU',
     ['Sentiment Analysis',
-     'About The Data'],
+     'The Data'],
     default_index=0)
     
 #Halaman Sentiment Analysis
