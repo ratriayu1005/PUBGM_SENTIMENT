@@ -87,7 +87,7 @@ if (selected == 'The Data') :
     st.write(df)
     
     #review rating bar
-    st.write('')
+    st.write('Number of review for ratings')
     rating_bar = df.groupby('rating').agg({'review_title':'count'})
     rating_bar.columns = ['Number of reviews']
     st.bar_chart(rating_bar)
